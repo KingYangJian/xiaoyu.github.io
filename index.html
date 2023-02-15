@@ -4,7 +4,7 @@
     <title>你愿意做我女朋友吗</title>
         <script>
         window.onload = function(){
-            // pushHistory();
+            pushHistory();
             // window.addEventListener(
             //     "popstate",
             //     function (e) {
@@ -12,13 +12,13 @@
             //     },
             //     false
             // );
-            // function pushHistory() {
-            //     var state = {
-            //         title: "title",
-            //         url: "#",
-            //     };
-            //     window.history.pushState(state, "title", "#");
-            // }
+            function pushHistory() {
+                var state = {
+                    title: "title",
+                    url: "#",
+                };
+                window.history.pushState(state, "title", "#");
+            }
             let audio = document.querySelector('audio');
             let btn = document.querySelector("body");
             let flag = false;
